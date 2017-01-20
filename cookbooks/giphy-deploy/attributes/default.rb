@@ -1,0 +1,7 @@
+default[:giphy][:deploy_user] = "jenkins"
+default[:giphy][:deploy_user_home] = "/home/#{default[:giphy][:deploy_user]}"
+default[:giphy][:deployment_dir] = "giphy_deployments"
+default[:giphy][:deployment_path] = "#{default[:giphy][:deploy_user_home]}/#{default[:giphy][:deployment_dir]}"
+default[:giphy][:current_deploy_path] = "#{default[:giphy][:deployment_path]}/current"
+default[:giphy][:entrypoint] = "app.js"
+default[:giphy][:npm_prefix_path] = "#{default[:giphy][:deploy_user_home]}/.node"

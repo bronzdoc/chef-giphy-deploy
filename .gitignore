@@ -1,0 +1,13 @@
+.rake_test_cache
+
+###
+# Ignore Chef key files and secrets
+###
+.chef/*.pem
+.chef/*.crt
+.chef/syntaxcache
+.chef/local-mode-cache
+.chef/trusted_certs
+cookbooks/*/berks-cookbooks
+cookbooks/*/vendor
+.chef/encrypted_data_bag_secret
